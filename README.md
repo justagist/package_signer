@@ -21,17 +21,17 @@ Positional arguments:
 Optional arguments:
 
     --signature, -s 			# Path to file containing signature.
-    --BLOCK               		# Sign using 'BLOCK' style (signature will be written as block comment if available)
-    --LINE                		# Sign using 'LINE' style (default)
+    --BLOCK               			# Sign using 'BLOCK' style (signature will be written as block comment if available)
+    --LINE                			# Sign using 'LINE' style (default)
     --exclude, -x 				# Space-separated files to be ignored during signing.
 
 ### Signature File
 
 The signature file accepts keywords that will be replaced by induvidual information based on each file being signed. (See example file `sample_signature.txt` in `config` folder)
 
-	* Name of the file : &nbsp;&nbsp;&nbsp;--file_name--					
-	* Name of the immediate parent directory: &nbsp;&nbsp;&nbsp;--parent_folder_name--		
-	* Full path in the git repository (if not in git repo, uses parent folder name): &nbsp;&nbsp;&nbsp;--full_path_in_package--		
-	* Name of git repository (root directory) if in git repo, else uses parent folder name): &nbsp;&nbsp;&nbsp;--repo_name--					
-	* User name as defined in git config for the repo (If not found, space is left empty): &nbsp;&nbsp;&nbsp;--git_username--				
-	* Name of package (destination argument passed to the script): &nbsp;&nbsp;&nbsp;--package_name--				
+	* Name of the file :	--file_name--					
+	* Name of the immediate parent directory:	--parent_folder_name--		
+	* Full path in the git repository (if not in git repo, uses parent folder name):	--full_path_in_package--		
+	* Name of git repository (root directory) if in git repo, else uses parent folder name):	--repo_name--					
+	* User name as defined in git config for the repo (If not found, space is left empty):	--git_username--				
+	* Name of package (destination argument passed to the script):	--package_name--				
