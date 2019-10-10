@@ -1,5 +1,0 @@
-@author: --repo_author--
-@file: --file_name--
-@package: --repo_name--
-
-!-- Lines enclosed like this are not read. They are comments. --!

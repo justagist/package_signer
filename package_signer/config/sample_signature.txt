@@ -1,0 +1,9 @@
+    
+    @author: --git_username--
+    @package: --repo_name--
+
+    @file: --file_name-- #! Anything written after this symbol (#!) is ignored. It is a line comment. The blank line above will be considered.
+#! This line is completely ignored (No blank line)
+    @parent: --parent_folder_name--
+    @location: --full_path_in_package--   #! Anything written on this line after this symbol is ignored. It is a line comment.
+    

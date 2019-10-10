@@ -1,19 +1,35 @@
+Convenience package for signing (adding comment text on top of) all files in a package using a Signature (file).
 
-### Arguments
+### Details
+
+* Can specify arguments to fill information automatically based on each file in the package (see below)
+* Currently supports signing on files written in python, cpp (and .h), c#, c, html, css, php, javascript, matlab, arduino (ino), shell script
 
 
-* Style: `--style / -s <style_name>`
-* Files to exclude (*has to be the large argument*): `--exclude / -x <space-separated files>` 
+### Setup
 
+* Run `python setup.py install`
 
-##### Style
+### Usage
 
-* BLOCK
-* LINE (Default)
+`sign_package [-h] [--signature path_to_signature_txt_file] [--BLOCK | --LINE] [--verbose] [--exclude [list_of_files_to_exclude ...]] package_or_file_to_sign`
 
-### Keywords
+Positional arguments:
+	* package_or_file_to_sign   Path to package or file that has to be signed.
 
-* --file_name--
-* --parent_folder_name--
-* --repo_name--
-* --repo_author--
+Optional arguments:
+  * --signature, -s 			Path to file containing signature.
+  * --BLOCK               		Sign using 'BLOCK' style (signature will be written as block comment if available)
+  * --LINE                		Sign using 'LINE' style (default)
+  * --exclude, -x 				Space-separated files to be ignored during signing.
+
+### Signature File
+
+The signature file accepts keywords that will be replaced by induvidual information based on each file being signed
+
+* --file_name--					Name of the file 
+* --parent_folder_name--		Name of the immediate parent directory
+* --full_path_in_package--		Full path in the git repository (if not in git repo, uses parent folder name)
+* --repo_name--					Name of git repository (root directory) if in git repo, else uses parent folder name)
+* --git_username--				User name as defined in git config for the repo (If not found, space is left empty)
+* --package_name--				Name of package (destination argument passed to the script)
