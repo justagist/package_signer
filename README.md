@@ -15,13 +15,15 @@ Convenience package for signing (adding comment text on top of) all files in a p
 `sign_package [-h] [--signature path_to_signature_txt_file] [--BLOCK | --LINE] [--verbose] [--exclude [list_of_files_to_exclude ...]] package_or_file_to_sign`
 
 Positional arguments:
-	* package_or_file_to_sign   Path to package or file that has to be signed.
+
+	package_or_file_to_sign     # Path to package or file that has to be signed.
 
 Optional arguments:
-  * --signature, -s 			Path to file containing signature.
-  * --BLOCK               		Sign using 'BLOCK' style (signature will be written as block comment if available)
-  * --LINE                		Sign using 'LINE' style (default)
-  * --exclude, -x 				Space-separated files to be ignored during signing.
+
+    --signature, -s 			# Path to file containing signature.
+    --BLOCK               		# Sign using 'BLOCK' style (signature will be written as block comment if available)
+    --LINE                		# Sign using 'LINE' style (default)
+    --exclude, -x 				# Space-separated files to be ignored during signing.
 
 ### Signature File
 
