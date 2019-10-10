@@ -27,9 +27,9 @@ Optional arguments:
 
 The signature file accepts keywords that will be replaced by induvidual information based on each file being signed
 
-* --file_name--					Name of the file 
-* --parent_folder_name--		Name of the immediate parent directory
-* --full_path_in_package--		Full path in the git repository (if not in git repo, uses parent folder name)
-* --repo_name--					Name of git repository (root directory) if in git repo, else uses parent folder name)
-* --git_username--				User name as defined in git config for the repo (If not found, space is left empty)
-* --package_name--				Name of package (destination argument passed to the script)
+* Name of the file : &nbsp;&nbsp;&nbsp;--file_name--					
+* Name of the immediate parent directory: &nbsp;&nbsp;&nbsp;--parent_folder_name--		
+* Full path in the git repository (if not in git repo, uses parent folder name): &nbsp;&nbsp;&nbsp;--full_path_in_package--		
+* Name of git repository (root directory) if in git repo, else uses parent folder name): &nbsp;&nbsp;&nbsp;--repo_name--					
+* User name as defined in git config for the repo (If not found, space is left empty): &nbsp;&nbsp;&nbsp;--git_username--				
+* Name of package (destination argument passed to the script): &nbsp;&nbsp;&nbsp;--package_name--				
