@@ -2,7 +2,7 @@ Convenience package for signing (adding comment text on top of) all files in a p
 
 ### Details
 
-* Can specify arguments to fill information automatically based on each file in the package (see below)
+* Can specify keywords in signature text to fill information automatically based on each file in the package (see below)
 * Currently supports signing on files written in python, cpp (and .h), c#, c, html, css, php, javascript, matlab, arduino (ino), shell script
 
 
