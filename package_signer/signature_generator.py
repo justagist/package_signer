@@ -1,3 +1,11 @@
+#  
+#     @author: JustaGist 
+#     @package: package_signer 
+#     	Easily sign all files in a package using file-specific information. 
+#  
+#     @file: signature_generator.py 
+#  
+
 import os, subprocess
 from package_signer.config import EXTENSION_COMMENT_SYNTAX
 
