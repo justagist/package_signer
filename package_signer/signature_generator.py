@@ -36,7 +36,17 @@ class PackageSignatureGenerator:
 
         self._verbose = verbose
 
-        self._unsigned_files = [os.path.abspath(file) for file in files_to_ignore if os.path.exists(file) ] if files_to_ignore is not None else []
+        unsigned_files = [os.path.abspath(file) for file in files_to_ignore if os.path.exists(file) ] if files_to_ignore is not None else []
+
+        self._unsigned_files = []
+        for obj in unsigned_files:
+            if os.path.isdir(obj):
+                for root,d_names,f_names in os.walk(obj):
+                    for f in f_names:
+                        self._unsigned_files.append(os.path.join(root, f))
+            elif os.path.isfile(obj):
+                self._unsigned_files.append(obj)
+
 
         print (self._unsigned_files)
 
